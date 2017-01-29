@@ -1,0 +1,12 @@
+ Exe (Self executables) - Dll (executable)
+ ==================================================================================
+ 
+ Both; assemblies contains the "compiled" code but the "exe" assembly code will never be shared to other assemblies whereas the "dll" assemblies are created for this purpose; to share the (or reuse) compiled code without copying+pasting into any other assemblies.
+ 
+ The "exe" assembly must have an entry point - main() method which will be bootstraped by the OS or sub framework.
+	For instanace, ASP.NET web app, mobile apps & service app framework (sub sub frameworks) automatically
+	bootstrap the main() function so we don't have to create an "exe" assembly but they (ASP.NEt, mobile) always 	produce .dll 	assemblies.
+
+ [NOTE: DLL assembly must be referenced to other DLL or EXE whereas "EXE" can't]
+
+
